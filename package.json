@@ -1,0 +1,25 @@
+{
+  "name": "reactshardlib",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "postinstall": "cd ./packages/mobile && expo-yarn-workspaces postinstall",
+    "test": "jest"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "packages/shared/*"
+    ]
+  },
+  "devDependencies": {
+    "@reactshardlib/eslint-config": "*",
+    "@types/jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "ts-jest": "^26.1.3",
+    "typescript": "^3.9.7"
+  },
+  "author": "Adriano Oliveira <drprado2@gmail.com>",
+  "license": "MIT"
+}
